@@ -52,6 +52,10 @@ final class BraintreeGatewayConfigurationType extends AbstractType
                     ]),
                 ],
             ])
+            ->add('merchantAccountId', TextType::class, [
+                'label' => 'bitbag_sylius_braintree_plugin.ui.merchant_account_id',
+                'required' => false,
+            ])
             ->add('sandbox', CheckboxType::class, [
                 'label' => 'bitbag_sylius_braintree_plugin.ui.sandbox',
             ])
